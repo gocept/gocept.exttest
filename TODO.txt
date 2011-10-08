@@ -1,0 +1,3 @@
+- adjust formatting for success/fail/error
+- tweak __module__ on generated TestCase
+- README
