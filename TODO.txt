@@ -1,3 +1,4 @@
 - adjust formatting for success/fail/error
 - tweak __module__ on generated TestCase
+- convert names (TestCase: spaces to CamelCase, methods: spaces to underscore)
 - README
