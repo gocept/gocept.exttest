@@ -16,11 +16,18 @@ class FindTest(unittest.TestCase):
             mock.sentinel.runner, mock.sentinel.directory)
         self.assertEqual(mock.sentinel.directory, popen.call_args[0][0][2])
         self.assertEqual(2, combined_suite.countTestCases())
-        suite = iter(combined_suite).next()
-        suite = iter(suite)
+        test_suite = iter(combined_suite).next()
+        suite = iter(test_suite)
         test = suite.next()
         self.assertEqual(
-            'test_exists (gocept.exttest.case.RealityJSTest)', str(test))
+            'test_exists (gocept.exttest.case.RealityTest)', str(test))
+        with mock.patch.object(test, '_run_js_test') as run:
+            test()
+            run.assert_called_with('Reality', 'exists')
+
         test = suite.next()
         self.assertEqual(
-            'test_fails (gocept.exttest.case.RealityJSTest)', str(test))
+            'test_fails (gocept.exttest.case.RealityTest)', str(test))
+        with mock.patch.object(test, '_run_js_test') as run:
+            test()
+            run.assert_called_with('Reality', 'fails')
