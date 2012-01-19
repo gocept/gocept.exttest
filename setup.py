@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='gocept.exttest',
-    version='0.1.2dev',
+    version='0.1.2',
     author='gocept',
     author_email='mail@gocept.com',
     url='http://code.gocept.com/hg/public/gocept.exttest',
