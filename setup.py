@@ -1,4 +1,4 @@
-# Copyright (c) 2011 gocept gmbh & co. kg
+# Copyright (c) 2012 gocept gmbh & co. kg
 # See also LICENSE.txt
 
 from setuptools import setup, find_packages
@@ -9,9 +9,8 @@ setup(
     version='0.1dev',
     author='gocept',
     author_email='mail@gocept.com',
-    url='',
-    description="""\
-""",
+    url='http://code.gocept.com/hg/public/gocept.exttest',
+    description="Helper to run external commands as tests with zc.testrunner.",
     long_description=(
         open('README.txt').read()
         + '\n\n'
@@ -24,6 +23,7 @@ setup(
     namespace_packages=['gocept'],
     install_requires=[
         'setuptools',
+        'zc.recipe.testrunner',
     ],
     extras_require=dict(test=[
         'mock',
