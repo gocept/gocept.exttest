@@ -2,7 +2,7 @@
 gocept.exttest
 ==============
 
-Helper to run external commands as tests with zc.testrunner.
+Helper to integrate external tests with python unittests.
 
 Requirements
 ============
@@ -46,8 +46,7 @@ If your external command needs additional arguments, you can pass them to the
 `makeSuite` function as arguments.
 
 The following setup example needs to be placed into a file, which can be found
-by the `zc.testrunner`. That means in most cases, that its name must start with
-`test_`::
+by your testrunner::
 
 >>> import gocept.exttest
 ... def test_suite():
@@ -60,11 +59,11 @@ Example
 Running tests
 -------------
 
-gocept.exttest was built to integrate javascript unittests with zc.testrunner.
-Therefore, we decided to use jasmine as the javascript unittest framework. We
-also use jasmine with node.js to test the javascript code browser independent.
-In order to use jasmine with gocept.exttest, we forked the jasmine-node to be
-able to speak json and provide the `--list` argument.
+We built gocept.exttest to integrate javascript unittests with python
+unittests. Therefore, we decided to use jasmine as the javascript unittest
+framework. We also use jasmine with node.js to test the javascript code browser
+independent.  In order to use jasmine with gocept.exttest, we forked the
+jasmine-node to be able to speak json and provide the `--list` argument.
 
 In your buildout environment, install node.js and jasmine-node like this::
 
