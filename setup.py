@@ -10,7 +10,7 @@ setup(
     author='gocept',
     author_email='mail@gocept.com',
     url='http://code.gocept.com/hg/public/gocept.exttest',
-    description="Helper to run external commands as tests with zc.testrunner.",
+    description="Helper to integrate external tests with python unittests.",
     long_description=(
         open('README.txt').read()
         + '\n\n'
