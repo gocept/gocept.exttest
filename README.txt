@@ -4,13 +4,15 @@ gocept.exttest
 
 Helper to integrate external tests with python unittests.
 
+.. contents:: :depth: 1
+
 Requirements
 ============
 
 The external command needs to provide the `--list` argument, which must return
 a list of available tests in a JSON datastructure::
 
-    >>> bin/external_test_runner --list 
+    >>> bin/external_test_runner --list
     ... [{"case": "MyExternalTestCase",
     ...   "tests": ["test_first_js_func", "test_second_js_func"]}
 
@@ -118,3 +120,13 @@ this::
     ...    expect(new MyApp().to_test).toEqual(value)
 
 For further documentation please read the jasmine docs.
+
+
+Development
+===========
+
+The source code is available in the mercurial repository at
+https://code.gocept.com/hg/public/gocept.exttest
+
+Please report any bugs you find at
+https://projects.gocept.com/projects/gocept-exttest/issues
