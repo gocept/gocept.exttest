@@ -1,20 +1,17 @@
-# Copyright (c) 2012 gocept gmbh & co. kg
-# See also LICENSE.txt
-
 from setuptools import setup, find_packages
 
 
 setup(
     name='gocept.exttest',
     version='1.1.dev0',
-    author='Wolfgang Schnerring <ws at gocept dot com>, Michael Howitz <mh at gocept dot com>',
+    author='gocept gmbh & co. kg',
     author_email='mail@gocept.com',
-    url='http://code.gocept.com/hg/public/gocept.exttest',
+    url='https://bitbucket.org/gocept/gocept.exttest',
     description="Helper to integrate external tests with python unittests.",
     long_description=(
-        open('README.txt').read()
-        + '\n\n'
-        + open('CHANGES.txt').read()),
+        open('README.txt').read() +
+        '\n\n' +
+        open('CHANGES.txt').read()),
     packages=find_packages('src'),
     package_dir={'': 'src'},
     include_package_data=True,

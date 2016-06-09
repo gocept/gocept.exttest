@@ -147,7 +147,7 @@ Development
 ===========
 
 The source code is available in the mercurial repository at
-https://code.gocept.com/hg/public/gocept.exttest
+https://bitbucket.org/gocept/gocept.exttest
 
 Please report any bugs you find at
-https://projects.gocept.com/projects/gocept-exttest/issues
+https://bitbucket.org/gocept/gocept.exttest/issues
